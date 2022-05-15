@@ -1,0 +1,14 @@
+
+ 
+ ## Count digits in a factorial 
+ 
+  int facDigits(int N){
+    if(N==1)return 1;
+    double ans=0.0;
+    for(int i =2;i<=N;i++){
+        ans=ans+log10(i);
+       }
+    return ceil(ans);
+   } 
+   
+   //  f(x) = n* log10(( n/ e)) + log10(2*pi*n)/2    //for O(N)  // Kamenetsky's formula
